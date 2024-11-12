@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags(semantica)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            
+        }
+
+        header {
+            background-color: gray;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        main {
+            background-color: rgb(209, 123, 123);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+        }
+
+        footer {
+            background-color: rgb(255, 0, 0);
+            padding: 3px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+
+        article > aside {
+            background-color: rgb(101, 126, 235);
+        }
+
+        nav {
+        color: greenyellow;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459);
+       /* Em short Hand*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(184, 77, 255);
+            margin-right: 3px;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 1px 1px 1px black;
+        }  
+        
+        #bola {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 50%; 
+        margin: 10px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!--Conteúdo do cabecalho-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main> <!--Conteúdo principal-->
+        <section id="assuntos">
+            <article>
+                <h1>Noticia sobre o Brasil</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta perspiciatis quaerat est rerum fugit exercitationem explicabo sint ipsum fuga, tempora adipisci, atque quas, expedita quibusdam suscipit? Accusantium harum unde nostrum.</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Gabriel</p>
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <p>Esportes Politica e Tecnologia</p>
+            <article>
+
+            </article>
+        </section>
+
+
+
+    </main>
+
+    <footer> <!--Conteúdo do rodapé-->
+        <p>Desenvolvido por Lucas Gabriel</p>
+
+    </footer>
+
+    <div id="bola"></div>
+
+
+
+
+
+
+    
+</body>
+</html>
