@@ -22,7 +22,8 @@
             }
 
             table {
-                width: 500px;
+                position: relative;
+                width: 600px;
                 border-collapse: collapse;
                  /*Faz com que as bordas sejam unidas*/
             }
@@ -39,6 +40,17 @@
             thead {
                 background-color: black;
                 color: white;
+            }
+
+            thead > tr > th {
+                position: sticky; /*Fixa a tabela no topo*/
+                top: -1px; /*Fixa a tabela no topo*/
+                background-color: black; /*Cor de fundo do cabecalho*/
+            }
+
+            /*Faz com que as linhas sejam alternadas de cor(Efeito Zebrado)*/
+            tbody > tr:nth-child(2n) { 
+                background-color: lightgray;
             }
 
             caption {
@@ -59,7 +71,7 @@
         <thead>
             <tr>
                 <th>Estado</th> <!--Cabecalho-->
-                <th>Populacao</th>
+                <th>População</th>
             </tr>
         </thead>
 
@@ -138,6 +150,36 @@
                 <td>Pará</td>
                 <td class="num">8.562.707</td>
             </tr>   
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.056.055</td>
+            </tr>
+
+            <tr>    
+                <td>Ceará</td>
+                <td class="num">8.932.432</td>
+            </tr>
+
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">7.521.762</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.800.605</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
         </tbody>
 
 
@@ -154,6 +196,23 @@
 
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam commodi quod error nemo cum eos culpa veniam aliquam. Eius ad similique eum aperiam sapiente laboriosam. Totam laboriosam perspiciatis sed?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nesciunt sequi ullam quia similique fugiat possimus commodi dolorem culpa vel maiores ut? Accusantium, praesentium nemo dicta iusto quibusdam aliquid <ut class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit, dolores quae deleniti cum nulla laudantium reiciendis voluptates hic. Laborum eaque dolores, voluptate sequi dolorem iure reprehenderit aut reiciendis <et class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos. Quos, quas? Voluptas, iste. Quos, quas. Voluptas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est itaque molestiae dolorum nihil odio dicta doloremque deserunt, magni excepturi nisi sed, temporibus quia qui quisquam accusamus ducimus cumque reprehenderit!loremlorem
+    </et></ut></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate enim harum nulla ducimus, fuga temporibus odio debitis voluptatem similique quidem fugit sequi eos, sed soluta deleniti amet hic doloribus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam sint esse facilis. Natus fugit quisquam tempora maxime, sequi perspiciatis, architecto quas earum, minima rem ex itaque incidunt labore? Ullam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis voluptatibus reiciendis vero dolorum fugiat, porro sint molestias sapiente consequuntur minima est repellat maxime neque officiis provident nihil corporis ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi ab ipsa aliquid, similique exercitationem hic culpa cupiditate aut optio minima facilis! Sint consequatur aut odit tempora sed dolore dicta?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam commodi quod error nemo cum eos culpa veniam aliquam. Eius ad similique eum aperiam sapiente laboriosam. Totam laboriosam perspiciatis sed?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nesciunt sequi ullam quia similique fugiat possimus commodi dolorem culpa vel maiores ut? Accusantium, praesentium nemo dicta iusto quibusdam aliquid <ut class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit, dolores quae deleniti cum nulla laudantium reiciendis voluptates hic. Laborum eaque dolores, voluptate sequi dolorem iure reprehenderit aut reiciendis <et class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos. Quos, quas? Voluptas, iste. Quos, quas. Voluptas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est itaque molestiae dolorum nihil odio dicta doloremque deserunt, magni excepturi nisi sed, temporibus quia qui quisquam accusamus ducimus cumque reprehenderit!loremlorem
+    </et></ut></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate enim harum nulla ducimus, fuga temporibus odio debitis voluptatem similique quidem fugit sequi eos, sed soluta deleniti amet hic doloribus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam sint esse facilis. Natus fugit quisquam tempora maxime, sequi perspiciatis, architecto quas earum, minima rem ex itaque incidunt labore? Ullam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis voluptatibus reiciendis vero dolorum fugiat, porro sint molestias sapiente consequuntur minima est repellat maxime neque officiis provident nihil corporis ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi ab ipsa aliquid, similique exercitationem hic culpa cupiditate aut optio minima facilis! Sint consequatur aut odit tempora sed dolore dicta?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam commodi quod error nemo cum eos culpa veniam aliquam. Eius ad similique eum aperiam sapiente laboriosam. Totam laboriosam perspiciatis sed?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nesciunt sequi ullam quia similique fugiat possimus commodi dolorem culpa vel maiores ut? Accusantium, praesentium nemo dicta iusto quibusdam aliquid <ut class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit, dolores quae deleniti cum nulla laudantium reiciendis voluptates hic. Laborum eaque dolores, voluptate sequi dolorem iure reprehenderit aut reiciendis <et class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos. Quos, quas? Voluptas, iste. Quos, quas. Voluptas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est itaque molestiae dolorum nihil odio dicta doloremque deserunt, magni excepturi nisi sed, temporibus quia qui quisquam accusamus ducimus cumque reprehenderit!loremlorem
+    </et></ut></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate enim harum nulla ducimus, fuga temporibus odio debitis voluptatem similique quidem fugit sequi eos, sed soluta deleniti amet hic doloribus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam sint esse facilis. Natus fugit quisquam tempora maxime, sequi perspiciatis, architecto quas earum, minima rem ex itaque incidunt labore? Ullam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis voluptatibus reiciendis vero dolorum fugiat, porro sint molestias sapiente consequuntur minima est repellat maxime neque officiis provident nihil corporis ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi ab ipsa aliquid, similique exercitationem hic culpa cupiditate aut optio minima facilis! Sint consequatur aut odit tempora sed dolore dicta?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam commodi quod error nemo cum eos culpa veniam aliquam. Eius ad similique eum aperiam sapiente laboriosam. Totam laboriosam perspiciatis sed?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nesciunt sequi ullam quia similique fugiat possimus commodi dolorem culpa vel maiores ut? Accusantium, praesentium nemo dicta iusto quibusdam aliquid <ut class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit, dolores quae deleniti cum nulla laudantium reiciendis voluptates hic. Laborum eaque dolores, voluptate sequi dolorem iure reprehenderit aut reiciendis <et class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos. Quos, quas? Voluptas, iste. Quos, quas. Voluptas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est itaque molestiae dolorum nihil odio dicta doloremque deserunt, magni excepturi nisi sed, temporibus quia qui quisquam accusamus ducimus cumque reprehenderit!loremlorem
+    </et></ut></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate enim harum nulla ducimus, fuga temporibus odio debitis voluptatem similique quidem fugit sequi eos, sed soluta deleniti amet hic doloribus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam sint esse facilis. Natus fugit quisquam tempora maxime, sequi perspiciatis, architecto quas earum, minima rem ex itaque incidunt labore? Ullam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis voluptatibus reiciendis vero dolorum fugiat, porro sint molestias sapiente consequuntur minima est repellat maxime neque officiis provident nihil corporis ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi ab ipsa aliquid, similique exercitationem hic culpa cupiditate aut optio minima facilis! Sint consequatur aut odit tempora sed dolore dicta?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quisquam commodi quod error nemo cum eos culpa veniam aliquam. Eius ad similique eum aperiam sapiente laboriosam. Totam laboriosam perspiciatis sed?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nesciunt sequi ullam quia similique fugiat possimus commodi dolorem culpa vel maiores ut? Accusantium, praesentium nemo dicta iusto quibusdam aliquid <ut class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit, dolores quae deleniti cum nulla laudantium reiciendis voluptates hic. Laborum eaque dolores, voluptate sequi dolorem iure reprehenderit aut reiciendis <et class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quos. Quos, quas? Voluptas, iste. Quos, quas. Voluptas, iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, est itaque molestiae dolorum nihil odio dicta doloremque deserunt, magni excepturi nisi sed, temporibus quia qui quisquam accusamus ducimus cumque reprehenderit!loremlorem
+    </et></ut></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate enim harum nulla ducimus, fuga temporibus odio debitis voluptatem similique quidem fugit sequi eos, sed soluta deleniti amet hic doloribus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magnam sint esse facilis. Natus fugit quisquam tempora maxime, sequi perspiciatis, architecto quas earum, minima rem ex itaque incidunt labore? Ullam!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perferendis voluptatibus reiciendis vero dolorum fugiat, porro sint molestias sapiente consequuntur minima est repellat maxime neque officiis provident nihil corporis ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi ab ipsa aliquid, similique exercitationem hic culpa cupiditate aut optio minima facilis! Sint consequatur aut odit tempora sed dolore dicta?</p>
     
 </body>
 </html>
