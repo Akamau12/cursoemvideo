@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!--Anatomia da Tabela Grande
+        Table   
+            CAPTION - Cabecalho
+            Thead - Cabecalho
+            (Tr) - Linha, (Td) - Coluna, (Tt) - Celula, 
+                Tbody - Corpo
+                (Tr) - Linha, (Td) - Coluna, (Tt) - Celula
+                    Tfoot - Rodape  
+                    (Tr) - Linha, (Td) - Coluna, (Tt) - Celula
+              th -  titulo  
+                -->
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table {
+                width: 500px;
+                border-collapse: collapse;
+                 /*Faz com que as bordas sejam unidas*/
+            }
+
+            .num {
+                text-align: right;
+            }
+
+            td, th {
+                border: 1px solid black; /*Borda*/
+                padding: 10px; 
+            }
+
+            thead {
+                background-color: black;
+                color: white;
+            }
+
+            caption {
+                font-size: 1.4em;
+                font-weight: bold;
+                padding: 10px; 
+            }
+        </style>
+
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>
+            Populacao das Unidades Federativas
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Estado</th> <!--Cabecalho-->
+                <th>Populacao</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.477.125</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.659.023</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.562.707</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.056.055</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.932.432</td>
+            </tr>
+
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">7.521.762</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.800.605</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td  class="num">3.537.242</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.562.707</td>
+            </tr>   
+        </tbody>
+
+
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <strong>
+                    <td class="num" >210.147.125</td>
+                </strong>
+            </tr>
+
+        </tfoot>
+
+
+    </table>
+    
+</body>
+</html>
