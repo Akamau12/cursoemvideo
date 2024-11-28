@@ -6,6 +6,36 @@
     <title>Formulario </title>
 </head>
 <body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+    <p>
+        <label for="iusuario">usuário</label>
+        <input type="text" name="usuario" id="iusuario" required minlength="5" max="10" placeholder="digite seu usuário" autocomplete="username">
+
+        <!--required serve para obrigar o usuario a preencher o campo-->
+
+        <!--minlength serve para definir o minimo de caracteres-->
+
+        <!--maxlength serve para definir o maximo de caracteres-->
+    </p>
+
+    <p>
+        <label for="isenha">senha</label>
+        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="digite sua senha" autocomplete="current-password">
+
+        <!--Placeholder serve para colocar um texto de ajuda-->
+
+        <!--Autocomplete serve para ajudar o usuario e usar os dados q ja tem salvo-->
+    </p>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+
+
+
+    </form>
     
 </body>
 </html>
