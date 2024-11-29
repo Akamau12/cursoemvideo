@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <forms action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>Escolha</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="PB">Paraiba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceara</option>
+                </optgroup>
+
+            </select>
+            <!--O select serve para escolher uma opcao, e no name dos select precisa ser igual para cada um-->
+            <!--O optgroup serve para agrupar as opcoes-->
+        </p>
+
+
+        <p>
+            <label for="iprof">Profissao</label> 
+            <input type="text" name="prof" id="iprof" list="sltprof">
+
+            <datalist id="sltprof">
+
+                <option>Administrador</option>
+
+                <option>Contabilista</option>
+
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <!--O datalist serve para criar uma lista de opcoes, e criamos ela com options, e colocamos o atributo list com o id da datalist e assim aparece as opcoes pro usuario-->
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!--O textarea serve para escrever uma mensagem-->
+        </p>
+
+    </forms>
+
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    
+</body>
+</html>
