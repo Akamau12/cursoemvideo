@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Num bolo So</title>
+
+    <style>
+        /*Comandos Gerais*/
+                * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #d6d6d6;
+            /*Faz com que a imagem de fundo se adapte ao tamanho da tela*/
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            
+            font-size: 2em;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+
+        /* Comando Em pe   */
+    @media screen and (orientation:portrait) {
+            
+            body {
+                background: url(imagens/cev-portrait.jpg);
+                background-position: center bottom;
+}
+}
+
+
+        /* Comando Deitado  */
+        @media screen and (orientation:landscape) {
+        body {
+            background: url(imagens/cev-landscape.jpg);
+            background-position: left bottom;
+}
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Ola Mundo</h1>
+    <h2>Nesse exmplo fizemos tudo num unico <br>arquivo <br>CSS</h2>
+    
+    
+</body>
+</html>
